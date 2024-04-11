@@ -75,6 +75,8 @@ const PokemonProvider = ({ children }) => {
         allPokemons,
         getAllPokemons,
         getPokemonByID,
+        globalPokemons,
+        setGlobalPokemons,
     }}>
         {children}
     </PokemonContext.Provider>
