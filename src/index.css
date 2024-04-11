@@ -46,8 +46,8 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-
-	padding: 40px 0;
+	padding-bottom: 60px;
+	
 }
 
 .logo img {
@@ -320,7 +320,7 @@ Styles of Pokemon Single Page
 
 .number-pokemon {
 	position: absolute;
-	top: -130px;
+	top: -100px;
 	left: 0;
 
 	font-size: 200px;
