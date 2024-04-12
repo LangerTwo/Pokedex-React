@@ -108,7 +108,14 @@ const PokemonProvider = ({ children }) => {
                     .map(type => type.type.name)
                     .includes(e.target.name)
             )
-            console.log(filteredResults)
+            setFilteredPokemons([...filteredPokemons, ...filteredResults])
+        } else{
+            const filteredResults = filteredPokemons.filter(pokemon =>
+                !pokemon.types
+                    .map(type => type.type.name)
+                    .includes(e.target.name)
+            )
+            setFilteredPokemons([ ...filteredResults ])
         }
     }
 
